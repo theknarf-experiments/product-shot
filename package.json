@@ -1,0 +1,14 @@
+{
+  "name": "product-shot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Frank Lyder Bredland <fl@nyggen.com>",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^2.7.0",
+    "commander": "^7.2.0",
+    "playwright": "^1.10.0",
+    "slugify": "^1.5.0"
+  },
+  "bin": "./src/index.mjs"
+}
