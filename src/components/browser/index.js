@@ -4,10 +4,11 @@ const Browser = ({ children }) => {
 	const style = `
 		.browser {
 			width: 60vw;
-			height: 60vh;
+			height: 50vh;
 			margin: 150px;
 			border-radius: 15px;
 			background: white;
+			overflow: hidden;
 		}
 
 		.browser .topbar {
@@ -32,7 +33,10 @@ const Browser = ({ children }) => {
 		}
 
 		.browser .content {
-			padding: 20px 20px 150px 20px;
+		}
+
+		.browser .content img {
+			max-width: 100%;
 		}
 `;
 
