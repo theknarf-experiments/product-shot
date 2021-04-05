@@ -8,7 +8,6 @@ const IPhone = ({ children }) => {
 			border-radius: 50px;
 			width: 35vh;
 			height: 70vh;
-			margin: 150px;
 			overflow: hidden;
 			padding: 25px;
 		}

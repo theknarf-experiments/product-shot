@@ -6,10 +6,19 @@ import desktop from '../../desktop.png';
 import mobile from '../../mobile.png';
 
 const Home = () => {
+	const style = `
+		.wrapper {
+			display: flex;
+		}
+
+		.wrapper > * {
+			margin: 150px;
+		}
+`;
+
 	return <Background>
-		<div style={{
-			display: 'flex',
-		}}>
+		<style>{style}</style>
+		<div className="wrapper">
 		<Browser>
 			<img src={desktop} />
 		</Browser>

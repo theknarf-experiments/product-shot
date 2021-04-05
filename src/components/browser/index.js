@@ -5,7 +5,6 @@ const Browser = ({ children }) => {
 		.browser {
 			width: 60vw;
 			height: 50vh;
-			margin: 150px;
 			border-radius: 15px;
 			background: white;
 			overflow: hidden;
