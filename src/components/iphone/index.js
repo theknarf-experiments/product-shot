@@ -3,46 +3,43 @@ import React from 'react';
 const IPhone = ({ children }) => {
 	const style = `
 		.iphone {
+			--iphone-size: 20rem;
+			--iphone-edge: 10px;
+			--iphone-radius: 30px;
+
 			position: relative;
 			background-color: #E3E8EC;
-			border-radius: 50px;
-			width: 35vh;
-			height: 70vh;
+			width: var(--iphone-size);
+			height: calc(2 * var(--iphone-size));
 			overflow: hidden;
-			padding: 25px;
+			padding: var(--iphone-edge);
+			border-radius: var(--iphone-radius);
 			filter: drop-shadow(0 0 2rem grey);
 		}
 
 		.iphone .topbar {
 			position: absolute;
-			top: 25px;
-			left: 25px;
-			right: 25px;
-			height: 50px;
+			top: var(--iphone-edge);
+			left: var(--iphone-edge);
+			right: var(--iphone-edge);
 			display: flex;
+			align-items: center;
+			justify-content: center;
 			/*background: grey;*/
-			border-top-left-radius: 50px;
-			border-top-right-radius: 50px;
-		}
-
-		.iphone .clock {
-			margin: 15px 25px;
+			border-top-left-radius: var(--iphone-radius);
+			border-top-right-radius: var(--iphone-radius);
 		}
 
 		.iphone .notch {
 			background-color: #E3E8EC;
 			width: 150px;
-			height: 35px;
-			border-bottom-left-radius: 50px;
-			border-bottom-right-radius: 50px;
-		}
-
-		.iphone .bars {
-
+			height: 25px;
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 20px;
 		}
 
 		.iphone .content {
-			border-radius: 50px;
+			border-radius: var(--iphone-radius);
 			overflow: hidden;
 			background: white;
 			height: 100%;
@@ -57,11 +54,7 @@ const IPhone = ({ children }) => {
 		<style>{style}</style>
 		<div className="iphone">
 			<div className="topbar">
-				<div className="clock">21:30</div>
 				<div className="notch" />
-				<div className="bars" />
-				<div className="wifi" />
-				<div className="power" />
 			</div>
 			<div className="content">
 			{children}
