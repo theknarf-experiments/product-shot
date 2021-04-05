@@ -5,7 +5,9 @@
   "author": "Frank Lyder Bredland <fl@nyggen.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "canvas": "^2.7.0",
@@ -17,5 +19,13 @@
     "react-dom": "^17.0.2",
     "slugify": "^1.5.0"
   },
-  "bin": "./src/index.mjs"
+  "bin": "./src/index.mjs",
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@storybook/addon-actions": "^6.2.2",
+    "@storybook/addon-essentials": "^6.2.2",
+    "@storybook/addon-links": "^6.2.2",
+    "@storybook/react": "^6.2.2",
+    "babel-loader": "^8.2.2"
+  }
 }
