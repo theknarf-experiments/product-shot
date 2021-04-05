@@ -10,6 +10,7 @@ const IPhone = ({ children }) => {
 			height: 70vh;
 			overflow: hidden;
 			padding: 25px;
+			filter: drop-shadow(0 0 2rem grey);
 		}
 
 		.iphone .topbar {

@@ -8,6 +8,7 @@ const Browser = ({ children }) => {
 			border-radius: 15px;
 			background: white;
 			overflow: hidden;
+			filter: drop-shadow(0 0 2rem grey);
 		}
 
 		.browser .topbar {
